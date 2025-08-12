@@ -1,0 +1,92 @@
+body {
+    background-color: #E5E7EB;
+}
+.metric-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 100%;
+}
+/* Igual ao de cima, mas uma classe diferente caso seja preciso para os gráficos */
+.metric-card-graph {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 100%;
+}
+.metric-title {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.metric-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metric-title-icon {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 8px 0;
+    color: black;
+}
+.metric-change {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.positive {
+    color: #28a745;
+}
+.negative {
+    color: #dc3545;
+}
+.neutral {
+    color: #6c757d;
+}
+.comparison {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 8px;
+}
+.placeholder-graph {
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #6c757d;
+}
+tr {
+    line-height: 2.0;
+  }
+
+.text-custom-color {
+    color: #4F46E5;
+}
+
+#div-menu {
+    background-color: white;
+}
+
+.nav-link.active {
+    background-color: #EEF2FF;
+    color: #000;
+    border-radius: 6px; 
+}
+
+svg, svg * {
+  pointer-events: all;
+}

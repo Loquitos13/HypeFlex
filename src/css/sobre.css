@@ -1,0 +1,393 @@
+/* Estilos do header */
+header {
+  display: flex;
+  margin-left: auto;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.left a {
+  width: 20%;
+}
+
+.left form {
+  flex: 1;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-desktop ul {
+  align-items: center;
+}
+
+#containerHeroe {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef2ff;
+  width: 100%;
+  padding: 35vh 0;
+}
+
+.esqHeroe {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.esqHeroe h1 {
+  font-weight: 650;
+}
+
+.botoesHeroes {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.dirHeroe {
+  float: left;
+  width: 40%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+.dirHeroe img {
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+#containerFeatures {
+  width: 90%;
+  margin: 0;
+  margin-top: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.featureBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureBox div {
+  margin-bottom: 4vh;
+  justify-self: center;
+}
+
+.featureBox p {
+  width: 70%;
+  text-align: center;
+}
+
+.featureBox .featureImagem {
+  padding: 20px;
+  background-color: #c3d1ff;
+  border-radius: 120%;
+}
+
+.featureBox .featureImagem2 {
+  padding: 20px 25px;
+  background-color: #c3d1ff;
+  border-radius: 120%;
+}
+
+#meetTeam {
+  width: 100%;
+  background-color: rgba(168, 164, 164, 0.09);
+  padding: 10px 0 100px 0;
+}
+
+.containerTeam {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: min-content;
+  gap: 30px;
+}
+
+.boxTeam {
+  width: fit-content;
+  height: min-content;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.boxTeam img {
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+.boxText {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+
+}
+
+.boxText .nome {
+  font-size: 1.5em;
+
+}
+
+.boxText .role {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  color: rgb(94, 29, 206);
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  width: 20%;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.social a {
+  width: 20px;
+  height: 20px;
+}
+
+#stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.stat {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat h2 {
+  color: #4f46e5;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  background-color: #4f46e5;
+}
+
+#cta h3 {
+  color: white;
+}
+
+#cta p {
+  color: white;
+}
+
+/* Estilos do footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: #121a2f;
+  color: #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  position: static;
+  margin-top: auto;
+}
+
+#containerFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#containerFooter li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.divFooter1,
+.divFooter {
+  flex: 1;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.divFooter1 h4,
+.divFooter h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.divFooter1 p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.divFooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.divFooter ul li {
+  margin-bottom: 0.6rem;
+}
+
+.divFooter a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.divFooter a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer hr {
+  width: 90%;
+  max-width: 1100px;
+  border: 0;
+  border-top: 1px solid #374151;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+footer p.direitos {
+  color: #ccc;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0;
+  width: 100%;
+}
+
+footer p.direitos b {
+  color: white;
+  font-weight: bold;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.social li {
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+#contactos {
+  color: white;
+}
+
+#contactos a {
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+}
+
+#contactos li {
+  list-style: none;
+}
+
+/* Css carrinho */
+
+.img-small {
+  width: 100px;
+  height: 100px;
+}
+
+.product-info {
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.product-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-outline-secondary {
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0;
+}
+
+/* Make trash icon consistent */
+.btn-link .bi-trash {
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover .bi-trash {
+  color: #4F46E5;
+}

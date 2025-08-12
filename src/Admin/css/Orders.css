@@ -1,0 +1,53 @@
+.text-custom-color {
+    color: #4F46E5;
+}
+
+#div-menu {
+    background-color: white;
+}
+
+.nav-link.active {
+    background-color: #EEF2FF;
+    color: #000;
+    border-radius: 6px;
+}
+
+/*Cores para numeros, caso positovo ou negativo */
+
+.per-possitivo {
+    color: #059669;
+}
+
+.per-negativo {
+    color: #DC2626;
+}
+
+/*Cores de status de encomendas*/
+.status-comleted {
+    color: #047857 !important;
+    background-color: #D1FAE5 !important;
+}
+
+.status-pending {
+    color: #B45309 !important;
+    background-color: #FEF3C7 !important;
+}
+
+.status-processing {
+    color: #1D4ED8 !important;
+    background-color: #DBEAFE !important;
+}
+
+/* Css para deixar o numero de sales do best selling products mais perto do nome do produto*/
+.num-sales {
+    margin-top: -15px;
+}
+
+/* Css para a foto do admin*/
+
+#img-admin {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+

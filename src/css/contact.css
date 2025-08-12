@@ -1,0 +1,321 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1f2937;
+    background-color: #f8fafc;
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    margin-left: auto;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.left a {
+    width: 20%;
+}
+
+.left form {
+    flex: 1;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-desktop ul {
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #6366f1;
+    /* primary-color */
+    border-color: #6366f1;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #4f46e5;
+    /* primary-dark */
+    border-color: #4f46e5;
+}
+
+.btn-outline-primary {
+    color: #6366f1;
+    /* primary-color */
+    border-color: #6366f1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6366f1;
+    border-color: #6366f1;
+    color: #fff;
+}
+
+/* Contact Page Specific Styles */
+.hero-section {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+    /* secondary-color */
+    padding: 4rem 0 3rem;
+}
+
+.contact-card {
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: #6366f1;
+    /* primary-color */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem;
+}
+
+.map-container {
+    height: 300px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    /* text-muted */
+}
+
+/* Footer Styles from contact.php's <style> block (applies if footer elements have .footer class) */
+/* Mova estes apenas se a classe .footer for estilizada especificamente para a página de contacto. */
+/* Se for um estilo de rodapé global, deve estar num CSS global. */
+.footer {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 3rem 0 1rem;
+}
+
+.footer h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #374151;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.social-icons a:hover {
+    background-color: #6366f1;
+    /* primary-color */
+}
+
+/* Css carrinho */
+
+.img-small {
+    width: 100px;
+    height: 100px;
+}
+
+.product-info {
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.product-info {
+    font-size: 1rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-outline-secondary {
+    width: 30px;
+    height: 30px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0;
+}
+
+/* Make trash icon consistent */
+.btn-link .bi-trash {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover .bi-trash {
+    color: #4F46E5;
+}
+
+/* Estilos do footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #121a2f;
+    color: #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    position: static;
+    margin-top: auto;
+}
+
+#containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#containerFooter li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divFooter1,
+.divFooter {
+    flex: 1;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.divFooter1 h4,
+.divFooter h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.divFooter1 p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.divFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divFooter ul li {
+    margin-bottom: 0.6rem;
+}
+
+.divFooter a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.divFooter a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer hr {
+    width: 90%;
+    max-width: 1100px;
+    border: 0;
+    border-top: 1px solid #374151;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+footer p.direitos {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0;
+    width: 100%;
+}
+
+footer p.direitos b {
+    color: white;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.social li {
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+#contactos {
+    color: white;
+}
+
+#contactos a {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+
+#contactos li {
+    list-style: none;
+}

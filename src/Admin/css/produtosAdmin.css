@@ -1,0 +1,115 @@
+.bg-purple {
+    background-color: #4F46E5;
+}
+
+.text-custom-color {
+    color: #4F46E5;
+}
+
+#div-menu {
+    background-color: white;
+}
+
+.nav-link.active {
+    background-color: #EEF2FF;
+    color: #000;
+    border-radius: 6px; 
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.variantClass, .colorClass, .sizeClass {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 4px 24px 4px 8px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    min-width: 40px;
+}
+.remove-variant-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background: linear-gradient(135deg, #ef4444 60%, #b91c1c 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    box-shadow: 0 2px 6px rgba(239,68,68,0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+.remove-variant-btn:hover {
+    background: linear-gradient(135deg, #b91c1c 60%, #ef4444 100%);
+    transform: scale(1.1);
+}
+
+/* Container das cores e dimensões selecionadas */
+.selectedColors,
+.selectedDimensions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Cada item de cor/dimensão como um cartão */
+.selectedColors .color-item,
+.selectedDimensions .dimension-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    border-radius: 6px;
+    padding: 6px 32px 6px 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    font-size: 15px;
+    min-height: 32px;
+    transition: box-shadow 0.2s;
+}
+.selectedColors .color-item:hover,
+.selectedDimensions .dimension-item:hover {
+    box-shadow: 0 2px 8px rgba(79,70,229,0.10);
+}
+
+/* Badge da cor */
+.selectedColors .color-badge {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #e5e7eb;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+}
+
+/* Nome e código da cor */
+.selectedColors .color-name {
+    font-weight: 500;
+    margin-right: 8px;
+}
+.selectedColors .color-hex {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Texto da dimensão */
+.selectedDimensions .dimension-type {
+    font-weight: 500;
+    margin-right: 8px;
+}
+.selectedDimensions .dimension-size {
+    font-size: 14px;
+    color: #6366f1;
+    background: #eef2ff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-right: 8px;
+}

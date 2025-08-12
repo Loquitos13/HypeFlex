@@ -1,0 +1,393 @@
+/* Estilização geral do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    margin-left: auto;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.left a {
+    width: 20%;
+}
+
+.left form {
+    flex: 1;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-desktop ul {
+    align-items: center;
+}
+
+/* Estilização para links de navegação */
+.nav-link {
+    color: #333;
+}
+
+/* Estilização para links de navegação ativos */
+.nav-link.active {
+    background-color: #5d4fff !important;
+    color: white !important;
+}
+
+/* Estilização para a secção principal (banner) */
+.hero-section {
+    background-color: #f5f7ff;
+    padding: 3rem 0;
+}
+
+/* Estilização para botões primários */
+.btn-primary {
+    background-color: #5d4fff;
+    border-color: #5d4fff;
+}
+
+/* Estilização para botões primários ao passar o rato */
+.btn-primary:hover {
+    background-color: #4a3dd8;
+    border-color: #4a3dd8;
+}
+
+/* Estilização para a secção principal de conteúdo de ajuda */
+.help-section {
+    padding: 3rem 0;
+}
+
+/* Estilização para o contentor da barra lateral */
+.sidebar {
+    position: sticky;
+    top: 2rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+/* Estilização para links de navegação dentro da barra lateral */
+.sidebar-nav .nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+/* Estilização para links de navegação ativos dentro da barra lateral */
+.sidebar-nav .nav-link.active {
+    background-color: #5d4fff;
+    color: white;
+}
+
+/* Estilização para links de navegação da barra lateral ao passar o rato (quando não estão ativos) */
+.sidebar-nav .nav-link:hover:not(.active) {
+    background-color: #f5f7ff;
+}
+
+/* Estilização para secções de sub-navegação dentro da barra lateral */
+.sidebar-nav .sub-nav {
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Estilização para links de navegação dentro de secções de sub-navegação */
+.sidebar-nav .sub-nav .nav-link {
+    padding: 0.3rem 1rem;
+}
+
+/* Estilização para botões de acordeão quando não estão recolhidos (abertos) */
+.accordion-button:not(.collapsed) {
+    background-color: #f5f7ff;
+    color: #5d4fff;
+    box-shadow: none;
+}
+
+/* Estilização para botões de acordeão quando estão em foco */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+/* Estilização para o ícone de seta nos botões de acordeão */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235d4fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Estilização para o contentor da barra de pesquisa na secção de ajuda */
+.search-help {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+/* Estilização para o campo de entrada da pesquisa */
+.search-help .form-control {
+    padding-left: 45px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+/* Estilização para o ícone de pesquisa dentro da barra de pesquisa */
+.search-help .search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+/* Estilização para títulos de categoria (ex: "Perguntas Frequentes") */
+.category-title {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #5d4fff;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilização para títulos de subcategoria (ex: "Questões Gerais") */
+.subcategory-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Estilização para secções de conteúdo principal (invólucros para FAQs, Termos, etc.) */
+.section-content {
+    margin-bottom: 3rem;
+}
+
+/* Estilização para tabelas de guia de tamanhos */
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilização para cabeçalhos de tabela e células de dados em tabelas de tamanhos */
+.size-table th,
+.size-table td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* Estilização para cabeçalhos de tabela em tabelas de tamanhos */
+.size-table th {
+    background-color: #f5f7ff;
+    font-weight: 600;
+}
+
+/* Estilização para linhas pares em tabelas de tamanhos (para efeito zebrado) */
+.size-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Estilização para o botão "Voltar ao Topo" */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5d4fff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+/* Estilização para o botão "Voltar ao Topo" quando está visível */
+.back-to-top.visible {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Estilos do footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #121a2f;
+    color: #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    position: static;
+    margin-top: auto;
+}
+
+#containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#containerFooter li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divFooter1,
+.divFooter {
+    flex: 1;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.divFooter1 h4,
+.divFooter h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.divFooter1 p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.divFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divFooter ul li {
+    margin-bottom: 0.6rem;
+}
+
+.divFooter a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.divFooter a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer hr {
+    width: 90%;
+    max-width: 1100px;
+    border: 0;
+    border-top: 1px solid #374151;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+footer p.direitos {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0;
+    width: 100%;
+}
+
+footer p.direitos b {
+    color: white;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.social li {
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+#contactos {
+    color: white;
+}
+
+#contactos a {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+
+#contactos li {
+    list-style: none;
+}
+
+/* Css carrinho */
+
+.img-small {
+    width: 100px;
+    height: 100px;
+}
+
+.product-info {
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.product-info {
+    font-size: 1rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-outline-secondary {
+    width: 30px;
+    height: 30px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0;
+}
+
+/* Make trash icon consistent */
+.btn-link .bi-trash {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover .bi-trash {
+    color: #4F46E5;
+}
