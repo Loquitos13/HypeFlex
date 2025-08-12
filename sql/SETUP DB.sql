@@ -358,5 +358,5 @@ CREATE TABLE Reviews (
 
 -- 4) Segurança final
 SET FOREIGN_KEY_CHECKS = 1;
-.
+
 
