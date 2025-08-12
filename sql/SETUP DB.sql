@@ -359,4 +359,15 @@ CREATE TABLE Reviews (
 -- 4) Segurança final
 SET FOREIGN_KEY_CHECKS = 1;
 
--- Fim do script
+USE `HypeFlex`;
+
+INSERT INTO Admins
+  (nome_admin, email_admin, pass_admin, contacto_admin, funcao_admin, data_criacao_admin)
+VALUES
+  ('Administrador Geral',
+   'admin@hypeflex.pt',
+   '$2y$10$Mb0mL5mdyuuntjc9GDRtReppaF64VcSufwNQFFF6bGcapfMrj1g0W', -- hash bcrypt para 'senha123'
+   '912345678',
+   'Administrador',
+   CURDATE());
+
